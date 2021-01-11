@@ -1,3 +1,6 @@
+const image = document.querySelector('img');
+const title = document.getElementById('title');
+const artist = document.getElementById('artist');
 const music = document.querySelector('audio');
 const prevBtn = document.getElementById('prev');
 const playBtn = document.getElementById('play');
@@ -12,7 +15,7 @@ function playSong() {
     playBtn.classList.replace('fa-play', 'fa-pause');
     playBtn.setAttribute('title', 'Pause');
     music.play();
-  }
+}
 
 // Pause Song
 function pauseSong() {
@@ -20,7 +23,7 @@ function pauseSong() {
     playBtn.classList.replace('fa-pause', 'fa-play');
     playBtn.setAttribute('title', 'Play');
     music.pause();
-  }
+}
 
 // Play Or Pause Event Listener
 playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
