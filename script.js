@@ -6,6 +6,30 @@ const prevBtn = document.getElementById('prev');
 const playBtn = document.getElementById('play');
 const nextBtn = document.getElementById('next');
 
+// Music
+const songs = [
+    {
+        name: 'jacinto-1',
+        displayName: 'Electric Chill',
+        artist: 'Jacinto Design'
+    },
+    {
+        name: 'jacinto-2',
+        displayName: 'Seven Nation',
+        artist: 'Jacinto Design'
+    },
+    {
+        name: 'jacinto-3',
+        displayName: 'Good Night',
+        artist: 'Jacinto Design'
+    },
+    {
+        name: 'metric-1',
+        displayName: 'Front Row',
+        artist: 'Jacinto Design'
+    }
+];
+
 // Check if playing
 let isPlaying = false;
 
