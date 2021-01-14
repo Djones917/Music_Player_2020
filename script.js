@@ -63,6 +63,22 @@ function loadSong(song) {
 // Current Song
 let songIndex = 0;
 
+// Prev Song
+function prevSong() {
+    songIndex++;
+    console.log(songIndex);
+    loadSong(songs[songIndex]);
+    playSong();
+}
+
+// Next Song
+function nextSong() {
+    songIndex++;
+    console.log(songIndex);
+    loadSong(songs[songIndex]);
+    playSong();
+}
+
 
 // On Load - Select First Song
 loadSong(songs[songIndex]);
