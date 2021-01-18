@@ -65,7 +65,7 @@ let songIndex = 0;
 
 // Prev Song
 function prevSong() {
-    songIndex++;
+    songIndex--;
     console.log(songIndex);
     loadSong(songs[songIndex]);
     playSong();
