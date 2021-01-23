@@ -89,6 +89,15 @@ function nextSong() {
 // On Load - Select First Song
 loadSong(songs[songIndex]);
 
+// Update Progress bar
+function updateProgressBar(e) {
+    if (isPlaying) {
+       const { duration, currentTime } = e.srcElement;
+       console.log(duration, currentTime);
+    }
+}
+
 // Event Listeners
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
+music.addEventListener('timeupdate', updateProgressBar);
